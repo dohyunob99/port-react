@@ -1,0 +1,240 @@
+/* Publishing css */
+
+#horizontal {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 800%; 
+    background: #1a1a1a;
+  
+    > section {
+      width: 100%;
+      background: #1a1a1a;
+  
+      &:first-child {
+        background: #0a0909;
+      }
+    }
+  }
+  
+  /* #horizontal > section:nth-child(2n){background:blue;} */
+  
+  .horIContent {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  
+    .inner {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .txtLeft {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      padding: 0 0 0 5vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-sizing: border-box;
+  
+      h2 {
+        font-size: 6.4vw;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: -0.05em;
+  
+        span {
+          color: #abe500;
+        }
+      }
+  
+      .exTxt {
+        font-size: 1.8vw;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: -0.05em;
+        word-break: keep-all;
+      }
+  
+      .exTxt2 {
+        margin-top: 20px;
+        font-size: 1.2vw;
+        font-weight: 300;
+        text-transform: uppercase;
+        letter-spacing: -0.05em;
+  
+        a {
+          display: inline-block;
+          padding: 5px 20px;
+          background: #000;
+          border-radius: 15px;
+        }
+      }
+    }
+  
+    h3 {
+      transition: transform 1s ease;
+      position: absolute;
+      z-index: 5;
+      left: 70px;
+      top: 140px;
+      font-size: 5.4vw;
+      font-weight: 900;
+      line-height: 5.8vw;
+      text-transform: uppercase;
+      letter-spacing: -0.05em;
+  
+      span {
+        transition: transform 1.5s 0.5s ease;
+        margin-right: 20px;
+        color: #42ab80;
+      }
+  
+      em {
+        display: block;
+        color: #e0e3e7;
+      }
+    }
+  
+    .imgBx {
+      transition: transform 1.5s 0.3s ease;
+      width: 50vw;
+      height: 35vw;
+      border: 2vw solid #000;
+      border-radius: 20px;
+      background: #fff;
+  
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  
+    .txtCon {
+      transition: transform 1.5s 0.5s ease;
+      position: absolute;
+      z-index: 5;
+      right: 110px;
+      bottom: 70px;
+      width: 500px;
+      min-height: 150px;
+      padding: 30px;
+      border-radius: 10px;
+      overflow: hidden;
+  
+      &::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        opacity: 0.7;
+      }
+  
+      p {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        word-break: keep-all;
+      }
+  
+      a {
+        position: relative;
+        z-index: 1;
+        display: inline-block;
+        padding: 8px 20px;
+        background: #333;
+        border-radius: 15px;
+        font-size: 13px;
+      }
+    }
+  
+    &.active {
+      h3 {
+        transform: translateX(30px);
+  
+        span {
+          color: #3efbae;
+        }
+      }
+  
+      .txtCon {
+        transform: translateX(-50px);
+      }
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .horIContent .imgBx {
+      width: 64%;
+      height: auto;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .horIContent {
+      .inner {
+        flex-direction: column;
+      }
+  
+      h3 {
+        position: relative;
+        width: 90%;
+        left: auto;
+        top: auto;
+        margin-bottom: 10px;
+  
+        em {
+          display: inline-block;
+        }
+      }
+  
+      .imgBx {
+        width: 90%;
+        height: auto;
+      }
+  
+      .txtCon {
+        position: relative;
+        width: 90%;
+        right: auto;
+        bottom: auto;
+        margin-top: 10px;
+      }
+  
+      &.active {
+        h2, .txtCon {
+          transform: none;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .horIContent .txtLeft {
+      padding: 0 10vw;
+  
+      .tit {
+        font-size: 8.4vw;
+        line-height: 11.4vw;
+  
+        span {
+          display: block;
+        }
+      }
+  
+      .exTxt, .exTxt2 {
+        font-size: 2.8vw;
+      }
+    }
+  }
