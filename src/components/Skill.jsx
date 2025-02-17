@@ -92,12 +92,12 @@ const Skill = () => {
             <li>Zeplin</li>
             <li className="vueLink">
                 <a href="https://nho-vue.netlify.app" target="_blank" rel="noopener noreferrer">VUE 
-                    <span><em class="none">VUE 프레임워크(컴포넌트, SCSS) 사용하여<br/> 동일한 포트폴리오를 만들었습니다. </em><em className="link">포트폴리오 바로가기</em></span>
+                    <span><em className="none">VUE 프레임워크(컴포넌트, SCSS) 사용하여<br/> 동일한 포트폴리오를 만들었습니다. </em><em className="link">포트폴리오 바로가기</em></span>
                 </a>             
             </li>   
             <li className="raectLink">
                 <a href="https://nho-react.netlify.app" target="_blank" rel="noopener noreferrer">REACT 
-                    <span><em class="none">REACT 프레임워크(컴포넌트, SCSS) 사용하여<br/> 동일한 포트폴리오를 만들었습니다. </em><em className="link">포트폴리오 바로가기</em></span>
+                    <span><em className="none">REACT 프레임워크(컴포넌트, SCSS) 사용하여<br/> 동일한 포트폴리오를 만들었습니다. </em><em className="link">포트폴리오 바로가기</em></span>
                 </a>             
             </li>    
         </ul>
