@@ -1,129 +1,220 @@
 /* skill css */
 
 .skillCon {
-    border: 26px solid #111;
-  
-    .inner {
-      position: relative;
-      width: 100%;
-      padding: 110px 5% 5vw;
-      background: #000;
-      box-sizing: border-box;
-    }
-  
-    h2 {
+  border: 26px solid #111;
+
+  .inner {
+    position: relative;
+    width: 100%;
+    padding: 110px 5% 5vw;
+    background: #000;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    opacity: 0;
+    font-size: 4.375rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+  }
+
+  .profileBx {
+    position: relative;
+    margin-top: 20px;
+    padding: 0 0 0 250px;
+
+    .photo {
       opacity: 0;
-      font-size: 4.375rem;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 200px;
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .txtCon {
+      opacity: 0;
+      position: relative;
+      padding: 0 20px 20px 20px;
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 400;
+      width: 90%;
+      color: #fff;
+      background: #000;
+      border-radius: 10px;
+      word-break: keep-all;
+    }
+  }
+
+  .cardList {
+    margin-top: 5vw;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5vw 10px;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 30px;
+      height: 100%;
+      background: #d1d1d1;
+      transform: translate(-50%, -50%);
+      border-radius: 20px;
+    }
+
+    li {
+      flex: 0 0 35.5%;
+      height: 12vw;
+      border-radius: 20px;
+      background: #d1d1d1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-size: 2vw;
       font-weight: 900;
+      line-height: 2vw;
+      color: #000;
       text-transform: uppercase;
       letter-spacing: -0.05em;
-    }
-  
-    .profileBx {
-      position: relative;
-      margin-top: 20px;
-      padding: 0 0 0 250px;
-  
-      .photo {
-        opacity: 0;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 200px;
-        border-radius: 10px;
-        overflow: hidden;
-  
-        img {
-          width: 100%;
-        }
+      text-align: center;
+
+      &:nth-child(2n) {
+        margin-top: 50px;
       }
-  
-      .txtCon {
-        opacity: 0;
-        position: relative;
-        padding: 0 20px 20px 20px;
-        font-size: 20px;
-        line-height: 32px;
-        font-weight: 400;
-        width: 90%;
-        color: #fff;
-        background: #000;
-        border-radius: 10px;
-        word-break: keep-all;
-        white-space: pre-wrap;
-      }
-    }
-  
-    .cardList {
-      margin-top: 5vw;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 5vw 10px;
-  
-      &::before {
-        content: '';
+
+      &.vueLink a {
         display: block;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 30px;
+        width: 100%;
         height: 100%;
-        background: #d1d1d1;
-        transform: translate(-50%, -50%);
-        border-radius: 20px;
-      }
-  
-      li {
-        flex: 0 0 35.5%;
-        height: 12vw;
-        border-radius: 20px;
-        background: #d1d1d1;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        font-size: 2vw;
-        font-weight: 900;
-        line-height: 2vw;
-        color: #000;
-        text-transform: uppercase;
-        letter-spacing: -0.05em;
-  
-        &:nth-child(2n) {
-          margin-top: 50px;
-        }
-      }
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .skillCon {
-      h2 {
-        font-size: 3.125rem;
-      }
-  
-      .profileBx {
-        padding: 0 0 0 0;
-  
-        .photo {
-          position: relative;
-          left: auto;
-          top: auto;
-          width: 100%;
-          text-align: center;
-          background: #fff;
-  
-          img {
-            width: 80%;
+        color: #fff;
+        background: #008773;
+
+        span {
+          display: block;
+          margin-top: 10px;
+          font-size: 1vw;
+          line-height: 1.4vw;
+          font-weight: 400;
+          padding: 0 20px;
+
+          em.link {
+            display: block;
+            background: #153f38;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
           }
         }
-  
-        .txtCon {
-          padding: 20px 0 0 0;
-          width: 100%;
+      }
+
+      &.raectLink a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background: #3481c3;
+
+        span {
+          display: block;
+          margin-top: 10px;
+          font-size: 1vw;
+          line-height: 1.4vw;
+          font-weight: 400;
+          padding: 0 20px;
+
+          em.link {
+            display: block;
+            background: #083459;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+          }
         }
       }
     }
   }
+}
+
+@media (max-width: 768px) {
+  .skillCon {
+    h2 {
+      font-size: 3.125rem;
+    }
+
+    .profileBx {
+      padding: 0 0 0 0;
+
+      .photo {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        text-align: center;
+        background: #fff;
+
+        img {
+          width: 80%;
+        }
+      }
+
+      .txtCon {
+        padding: 20px 0 0 0;
+        width: 100%;
+      }
+    }
+
+    .cardList li {
+      height: 15vw;
+
+      &.vueLink a span em, &.raectLink a span em {
+        display: none;
+
+        &.link {
+          margin-top: 0;
+          font-size: 12px;
+          line-height: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .skillCon .cardList li {
+    flex: 1 1 37%;
+
+    &:nth-child(2n) {
+      margin-top: 20vw;
+    }
+
+    &.vueLink a span em.link, &.raectLink a span em.link {
+      font-size: 1.8vw;
+      padding: 1vw 2vw;
+      margin-top: -1.5vw;
+    }
+  }
+}

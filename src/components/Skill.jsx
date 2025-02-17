@@ -82,14 +82,24 @@ const Skill = () => {
           </div>
         </div>
         <ul className="cardList">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>Jquery</li>
-          <li>Git</li>
-          <li>SVN</li>
-          <li>React</li>
-          <li>Vue</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>Jquery</li>
+            <li>Git</li>
+            <li>PhotoShop</li>
+            <li>Figma</li>
+            <li>Zeplin</li>
+            <li className="vueLink">
+                <a href="https://nho-vue.netlify.app" target="_blank" rel="noopener noreferrer">VUE 
+                    <span><em class="none">VUE 프레임워크(컴포넌트, SCSS) 사용하여<br/> 동일한 포트폴리오를 만들었습니다. </em><em className="link">포트폴리오 바로가기</em></span>
+                </a>             
+            </li>   
+            <li className="raectLink">
+                <a href="https://nho-react.netlify.app" target="_blank" rel="noopener noreferrer">REACT 
+                    <span><em class="none">REACT 프레임워크(컴포넌트, SCSS) 사용하여<br/> 동일한 포트폴리오를 만들었습니다. </em><em className="link">포트폴리오 바로가기</em></span>
+                </a>             
+            </li>    
         </ul>
       </div>
     </section>
