@@ -1,5 +1,5 @@
 import pubImg01 from "../assets/img/site1.jpg";
-import pubImg02 from "../assets/img/site2.png";
+import pubImg02 from "../assets/img/site2.jpg";
 import pubImg03 from "../assets/img/site3.jpg";
 import pubImg04 from "../assets/img/site4.jpg";
 import pubImg05 from "../assets/img/site5.jpg";
